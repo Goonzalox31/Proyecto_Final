@@ -7,4 +7,69 @@ ul{
 }.RRSS{
     width: 40px;
     height: 40px;
+    margin: 4px;
+    
+    
+    
 }
+
+body{
+    background-image: url("/Imagenes/Fondo.jpg");
+    background-size: 100%;
+    background-repeat:inherit
+}
+
+#perfil{
+    border-radius: 22% 78% 25% 75% / 54% 24% 76% 46% ;
+    width: 240px;
+    height: 350px;
+    margin-top: 5px;
+    box-shadow: 8px 8px 18px 8px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 8px 8px 18px 8px rgba(0,0,0,0.69);
+    -moz-box-shadow: 8px 8px 18px 8px rgba(0,0,0,0.69);
+    filter: sepia(6%) saturate(131%) contrast(99%);
+    -webkit-filter: sepia(6%) saturate(131%) contrast(99%);
+    -moz-filter: sepia(6%) saturate(131%) contrast(99%);
+    
+
+}
+
+.RRSS-container{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#welcome-txt{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#mis-trabajos-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.prueba{
+    width: 40px;
+    height: 40px;
+}
+ #mis-trabajos{
+    height: 100vh   ;
+ }
+
+ .email{
+    display: flex;
+    justify-content: left;
+ }

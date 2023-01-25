@@ -10,56 +10,93 @@
 
 </head>
 <body>
-    <nav>seccion 1 seccion2 seccion 3</nav>
-    <header>
-        <img src="Imagenes/Foto de Stephen.jpg" alt="Foto de Stephen">
-        <h1>Stephen Lopez</h1>
-        <h2>Fotografo</h2>
-        <div>
-            
-        <img src="Imagenes/RRSS/facebook.png" alt="Imagen de facebook" class="RRSS">
-        <img src="Imagenes/RRSS/github.png" alt="Imagen de github" class="RRSS">
-        <img src="Imagenes/RRSS/instagram.png" alt="Imagen de instagram" class="RRSS">
-        <img src="Imagenes/RRSS/linkedin.png" alt="Imagen de linkedin" class="RRSS">
-        <img src="Imagenes/RRSS/twitter.png" alt="Imagen de twitter" class="RRSS">
-             
-
-        <h3>Bienvenido a mi CV digital</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quaerat, dolorum vero officiis atque eius, mollitia commodi quas veniam itaque dicta aut iusto tempora adipisci quisquam corporis laudantium sed minus!</p>
-
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">LOGO</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="MenuNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Acerca de Mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactame</a></li>
+                </ul>
+            </div>
         </div>
 
+    </nav>
+    </div>
+    <header>
+        
+        <img id="perfil" src="Imagenes/Foto de Stephen.jpg" alt="Foto de Stephen"  class="img-fluid mx-auto d-block  ">
+        
+        <h1 class="text-center">Stephen Lopez</h1>
+        <h2 class="text-center">Fotografo</h2>
+        <div class="container">
+           
+
+        <h3 id="welcome">Bienvenido a mi CV digital</h3>
+        <p id="welcome-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quaerat, dolorum vero officiis atque eius, mollitia commodi quas veniam itaque dicta aut iusto tempora adipisci quisquam corporis laudantium sed minus!</p>
+
+        </div>
+        <div class="RRSS-container">
+            <img src="Imagenes/RRSS/facebook.png" alt="Imagen de facebook" class="RRSS   ">
+            <img src="Imagenes/RRSS/github.png" alt="Imagen de github" class="RRSS ">
+            <img src="Imagenes/RRSS/instagram.png" alt="Imagen de instagram" class="RRSS ">
+            <img src="Imagenes/RRSS/linkedin.png" alt="Imagen de linkedin" class="RRSS ">
+            <img src="Imagenes/RRSS/twitter.png" alt="Imagen de twitter" class="RRSS ">
+            </div> 
+
     </header>
-    <section>
-        <h2>Mis Trababajos</h2>
-        <div>aqui van las imagenes</div>
+    <section id="mis-trabajos">
+        <h2 id="mis-trabajos-titulo">Mis Trababajos</h2>
+        <br><br>
+        
+        <div id="galeria">
+            <img src="/Imagenes/Galeria/galeria.jpg" alt="" class="img-fluid">
+        </div>
+
     </section>
 
-    <section>
-        <h2>Acerca de Mi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem cum illo at aspernatur voluptatibus. Qui illum nam ratione voluptatem iste tempore quasi dolore? Odio molestias dolore nostrum dolores quisquam.
+    <section id="seccion-3">
+        <h2 id="mi">Acerca de Mi</h2>
+        <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem cum illo at aspernatur voluptatibus. Qui illum nam ratione voluptatem iste tempore quasi dolore? Odio molestias dolore nostrum dolores quisquam.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deserunt perspiciatis doloremque veniam et quaerat repellendus error ipsum ipsa omnis id hic quis repudiandae ullam laborum obcaecati at exercitationem laudantium!
         </p>
-        <h3>Informacion Personal</h3>
+        <h3 id="personal">Informacion Personal</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="listap">Lorem ipsum dolor sit amet consectetur adi</li>
+            <li class="listap">Lorem ipsum dolor sit amet consectetur adi</li>
+            <li class="listap">Lorem ipsum dolor sit amet consectetur adi</li>
         </ul>
-        <h3>estudios</h3>
+        <h3 id="estu">estudios</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="listae">Lorem ipsum dolor sit amet consectetur adi</li>
+            <li class="listae">Lorem ipsum dolor sit amet consectetur adi</li>
+            <li class="listae">Lorem ipsum dolor sit amet consectetur adi</li>
         </ul>
         
     </section>
 
     <section>
         <h2>contactame</h2>
-        <div>Formulario</div>
+        <div>
+            <form >
+                <label class="rounded float-start">Nombre</label>
+                <input type="text" placeholder="Ingresar nombre" class="rounded float-start"/>
+                <br>
+                <label class="rounded float-start" for="email">Email</label>
+                <input type="text" placeholder="Ingresar email" class="rounded float-start"/>
+                <label class="rounded float-start">Mensaje</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+                <input type="submit" value="Enviar">
+                
+            </form>
+        </div>
         <h2>Informacion de contacto</h2>
-        <ul class="img-email">
+        <ul>
             
             <li><img src="/Imagenes/Contacto/email.png" alt="" class="img-contacto">  stephen.lopez@example.com</li>
             <li><img src="/Imagenes/Contacto/telefono.png" alt="" class="img-contacto">  (820) 388-8842</li>
