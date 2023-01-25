@@ -14,7 +14,7 @@ ul{
 }
 
 body{
-    background-image: url("/Imagenes/Fondo.jpg");
+    background-image: url("/Imagenes/Fondo3.jpg");
     background-size: 100%;
     background-repeat:inherit
 }
@@ -53,6 +53,7 @@ body{
     font-size: small;
     text-align: center;
     background-color: aliceblue;
+    margin-bottom: 0.5rem;
 }
 
 #mis-trabajos-titulo{
@@ -72,4 +73,48 @@ body{
  .email{
     display: flex;
     justify-content: left;
+ }
+ 
+#mis-trabajos-titulo{
+    background-color: aliceblue;
+}
+
+ #mi{
+    background-color: aliceblue;
+ }
+
+ #parrafo{
+    background-color: aliceblue;
+ }
+
+ #personal{
+    background-color: aliceblue;
+ }
+
+ .listap{
+    background-color: aliceblue;
+ }
+
+ #estu{
+    background-color: aliceblue;
+ }
+
+ .listae{
+    background-color: aliceblue;
+ }
+
+ #inf-titulo{
+    background-color: aliceblue;
+ }
+
+ .datos{
+    background-color: aliceblue;
+ }
+
+ #consultas{
+    background-color: aliceblue;
+ }
+
+ .consultas-datos{
+    background-color: aliceblue;
  }
