@@ -16,6 +16,7 @@
 
 </head>
 <div class="container-fluid">
+    
     <nav class="navbar navbar-expand-md  fixed-top border-3 border border-top-0 border-dark">
         <div class="container-fluid">
             <a href="#" class="navbar-brand"><img class="img-fluid me-2" id="logo" src="/Imagenes/camara.png" alt="camara logo">SLP</a>
@@ -25,10 +26,15 @@
             <div id="MenuNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-3">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Acerca de Mi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contactame</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#berreta-2">Acerca de Mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#berreta">Mi Trabajo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#berreta-3">Contactame</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><button class=" " id="boton-fondo">Ver Mas</button></li>
                 </ul>
             </div>
+        
         </div>
 <body>
     
@@ -39,12 +45,22 @@
         <div id="principal">
         <img id="perfil" src="Imagenes/Foto de Stephen.jpg" alt="Foto de Stephen"  class="img-fluid   ">
         <div class="RRSS-container ">
-            <img src="Imagenes/RRSS/facebook.png" alt="Imagen de facebook" class="RRSS  w-auto ">
-            <img src="Imagenes/RRSS/github.png" alt="Imagen de github" class="RRSS w-auto">
-            <img src="Imagenes/RRSS/instagram.png" alt="Imagen de instagram" class="RRSS w-auto">
-            <img src="Imagenes/RRSS/linkedin.png" alt="Imagen de linkedin" class="RRSS w-auto">
-            <img src="Imagenes/RRSS/twitter.png" alt="Imagen de twitter" class="RRSS w-auto">
-            </div> 
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Imagenes/RRSS/facebook.png" alt="Imagen de facebook" class="RRSS  w-auto " >
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="Imagenes/RRSS/github.png" alt="Imagen de github" class="RRSS w-auto">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Imagenes/RRSS/instagram.png" alt="Imagen de instagram" class="RRSS w-auto">
+            </a>
+            <a href="https://ar.linkedin.com" target="_blank">
+                <img src="Imagenes/RRSS/linkedin.png" alt="Imagen de linkedin" class="RRSS w-auto">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="Imagenes/RRSS/twitter.png" alt="Imagen de twitter" class="RRSS w-auto">
+            </a>
+        </div> 
         
         
         </div>
@@ -58,29 +74,34 @@
         </div>
         
            
-        <div class="img-thumbnail textos " id="texto-1">
+        <div class=" textos " id="texto-1">
             <div>
                 <h3 >Bienvenido a mi CV digital</h3>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum provident error quasi.  <span class="hide" id="hidetext">Similique eius fuga iure minima officia officiis non doloribus, nam deleniti ullam, animi eum natus expedita atque doloremque!Loremlorem
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta facere assumenda veritatis tempora eum adipisci nihil dolores rem porro natus in, perferendis nobis nisi repellendus blanditiis cupiditate deleniti similique Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ab unde. Hic obcaecati facilis repellat esse suscipit vero labore consectetur doloremque iste molestias, quos, dolor accusamus nemo rem id natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea ullam nisi adipisci dicta magni officia. Distinctio eveniet ut quibusdam facere quidem magnam, quisquam nostrum id libero ipsum veritatis nesciunt?
+                    Lorem ipsum dolor sit, ameis npidit adipisicing elit. Corrupti, ab unde. Hic obcaecati facilis repellat esse suscipit vero labore consectetur doloremque iste molestias, quos, dolor accusamus nemo rem id natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea ullam nisi adipisci dicta magni officia. Distinctio eveniet ut quibusdam facere quidem magnam, quisquam nostrum id libero ipsum veritatis nesciunt?
                 </p>
+                
                 </span>
-                    <button class="readmore_btn" id="hidetext_btn">Ver Mas</button>
+                    <button class="readmore_btn " id="hidetext_btn">Ver Mas</button>
             </div>
         </div>
-        <img src="/Imagenes/camara fondo.png" alt="camara" id="camara-fondo" class="img-fluid .d-none .d-sm-block ">
+        <img src="/Imagenes/camara fondo.png" alt="camara" id="camara-fondo" class="img-fluid d-none d-sm-block ">
         
         </div>
 
         
 
-    </header>
+    </header >
+    
+    <hr id="berreta">
+
+    <div width: 200px; ></div>
     <section id="mis-trabajos">
         <div id="trabajos">
         <h2 class="titulo" id="titulo-2">Mis Trababajos</h2>
         <br><br>
-        <div id="carouselExampleIndicators" class="carousel slide tamañocarusel p-3">
+        <div id="carouselExampleIndicators" class="carousel slide tamañocarusel p-3 w-75">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -110,30 +131,40 @@
         </div>
     </section>
 
+    <hr id="berreta-2">
+
     <section id="seccion-3">
-        <h2 class="titulo">Acerca de Mi</h2>
+        
+        <h2 class="titulo" id="acerca-mi">Acerca de Mi</h2>
         <p class="img-thumbnail textos" id="acerca-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem cum illo at aspernatur voluptatibus. Qui illum nam ratione voluptatem iste tempore quasi dolore? Odio molestias dolore nostrum dolores quisquam.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, deserunt perspiciatis doloremque veniam et quaerat repellendus error ipsum ipsa omnis id hic quis repudiandae ullam laborum obcaecati at exercitationem laudantium!
         </p>
-        <h3 class="titulo">Informacion Personal</h3>
-        <ul class="listass">
+        <h3 class="titulo" id="personal">Informacion Personal</h3>
+        <ul class="listass" id="listas-personal">
             <li class="img-thumbnail textos-lista">Lorem ipsum dolor sit amet consectetur adi</li>
             <li class="img-thumbnail textos-lista">Lorem ipsum dolor sit amet consectetur adi</li>
             <li class="img-thumbnail textos-lista">Lorem ipsum dolor sit amet consectetur adi</li>
         </ul>
-        <h3 class="titulo" >estudios</h3>
-        <ul class="listass">
+        <h3 class="titulo" id="estudios-titulo">estudios</h3>
+        <ul class="listass" id="estudios-lista">
             <li class="img-thumbnail textos-lista">Lorem ipsum dolor sit amet consectetur adi</li>
             <li class="img-thumbnail textos-lista">Lorem ipsum dolor sit amet consectetur adi</li>
             <li class="img-thumbnail textos-lista">Lorem ipsum dolor sit amet consectetur adi</li>
         </ul>
-        
+
+        <div class="d-none d-md-block">
+        <img src="/Imagenes/camara-info.png " alt="camara" id="camara-info">
+        <img src="/Imagenes/camara-info-2.png" alt="camara" id="camara-info-2">
+        </div>
+
     </section>
 
-    <section>
+    <hr id="berreta-3">
+
+    <section id="seccion-4" >
         <div>
-            <h2 class="titulo ">Informacion de contacto</h2>
-            <ul class="listass">
+            <h2 class="titulo " id="info-titulo">Informacion de contacto</h2>
+            <ul class="listass" id="lista-contactos">
                 
                 <li class="img-thumbnail textos-lista"><img src="/Imagenes/Contacto/telefono.png" alt="" class="img-contacto">  (820) 388-8842</li>
                 <li class="img-thumbnail textos-lista"><img src="/Imagenes/Contacto/direccion.png" alt="" class="img-contacto">  5451 Hillcrest Rd</li>
@@ -167,10 +198,7 @@
         </div>
         
     </section>
-    <footer>
-        <p>Author: Hege Refsnes</p>
-        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-      </footer>
+    
     <script src="JS/functions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

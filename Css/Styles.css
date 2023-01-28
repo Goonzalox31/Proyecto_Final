@@ -1,12 +1,17 @@
 ul{
     list-style-type: none;
 }
-body{
-   padding-top: 5rem;
-}
+
 header{
    height: 100vh;
    position: relative;
+}
+
+hr{
+width: 100%;
+height: 40px;
+margin: auto;
+background-color: black;   
 }
 
 
@@ -22,7 +27,8 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
 body{
     background-image: url("/Imagenes/Fondo3.jpg");
     background-size: 100%;
-    background-repeat:inherit
+    background-repeat:inherit;
+    padding-top: 5rem;
 }
 
 #logo {
@@ -61,11 +67,7 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding-left: 13%;
-   
-    
-   
-    
+   padding-left: 13%;  
     
 }
 #principal{
@@ -126,6 +128,7 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
  #mis-trabajos{
     height: 100vh   ;
     position: relative;
+    margin-top: 10%;
  }
 
  .email{
@@ -172,12 +175,19 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
    
 }  
 
+#carouselExampleIndicators{
+   display: flex;
+   margin: auto;
+}
+
 #camaralogo {
    width: 100%;
    height: 100%;
    filter: sepia(20%) brightness(65%) saturate(83%) contrast(156%);
    -webkit-filter: sepia(20%) brightness(65%) saturate(83%) contrast(156%);
    -moz-filter: sepia(20%) brightness(65%) saturate(83%) contrast(156%);
+   display: flex;
+   margin: auto;
    
 }
 
@@ -195,6 +205,50 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
 
 #seccion-3{
    position: relative;
+   height: 100vh;
+   
+   
+}
+
+#seccion-4{
+   position: relative;
+   height: 100vh;
+   margin-top: 10%;
+}
+
+.readmore_btn {
+   background-color: transparent;
+   border: transparent; 
+   cursor: pointer;
+   border-radius: 15px;
+   padding: 5px 8px;
+}
+
+.readmore_btn:hover {
+   border: transparent;
+   transition: cubic-bezier(0.055, 0.62, 0.145, 0.8) 1.05s;
+}
+
+.hide {
+   display: none;
+}
+
+.show {
+   display: block;
+}
+
+#seccion-3{
+   margin-top: 10%; 
+}
+
+#lista-contactos{
+   width: 60%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  
+  
+
 }
 
 @media only screen and (min-width: 768px){
@@ -278,20 +332,91 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
       -webkit-filter: sepia(20%) brightness(80%) saturate(83%) contrast(156%);
       -moz-filter: sepia(20%) brightness(65%) saturate(83%) contrast(156%);
    }
+
   
-}
-#acerca-txt{
-   width: 80%;
-   position: relative;
-   left: 10%;
+   
+   #acerca-mi{
+      position: absolute;
+      top: 0%;
+      left: 5%;
+      margin: auto;
+      font-size: 35px;
+   }
+   
+   #personal{
+      position: absolute;
+      top: 0%;
+      left: 55%;
+      margin: auto;
+      font-size: 35px;
+   }
+
+   #listas-personal{
+      position: absolute;
+      top: 14%;
+      left: 60%;
+      width: 30%;
+      font-size: 20px;
+   }
+   
+   #acerca-txt{
+      position: absolute;
+      top: 14%;
+      left: 1%;
+      width: 40%;
+      font-size: 20px;
+      margin: auto;
+   }
+   
+  
+
+   #estudios-titulo{
+      position: absolute;
+      top: 40%;
+      left: 55%;
+      width: 30%;
+      font-size: 35px;
+      margin: auto;
+   }
+
+   #estudios-lista{
+      position: absolute;
+      top: 54%;
+      left: 60%;
+      width: 30%;
+      font-size: 20px;
+   }
+
+   #camara-info{
+      width: 34%;
+      position: absolute;
+      left: 2%;
+      top: 60%;
+      margin: auto;
+      filter: grayscale(30%) sepia(50%) brightness(107%) saturate(84%);
+      -webkit-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      -moz-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+   }
+
+   #camara-info-2{
+      width: 18%;
+      position: absolute;
+      left: 64%;
+      top: 80%;
+      margin: auto;
+      filter: grayscale(30%) sepia(50%) brightness(107%) saturate(84%);
+      -webkit-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      -moz-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      transform: rotate(13deg);
+      -webkit-transform: rotate(13deg);
+      -moz-transform: rotate(13deg);
+   
+
 }
 
-.listass{
-   width: 80%;
-   position: relative;
-   left: 15%;
+#seccion-3{
+   margin-top: 5%; 
 }
-
 
 
 
@@ -304,24 +429,7 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
 
  }
 
- .readmore_btn {
-   background-color: transparent;
-   border: transparent; 
-   cursor: pointer;
-}
 
-.readmore_btn:hover {
-   border: transparent;
-   transition: cubic-bezier(0.055, 0.62, 0.145, 0.8) 1.05s;
-}
-
-.hide {
-   display: none;
-}
-
-.show {
-   display: block;
-}
 
 #camaralogo{
    width: 400px;
@@ -331,7 +439,43 @@ box-shadow: 10px 10px 18px -9px rgba(0,0,0,0.84);
 }
 
 @media only screen and (min-width: 1190px){
-   #seccion-3{
-      margin-top: 30%;
+
+
+   #berreta-2{
+      margin-top: 20%;
    }
+
+   #mis-trabajos{
+      margin-top: 4%;
+   }
+
+   #camara-info{
+      width: 34%;
+      position: absolute;
+      left: 2%;
+      top: 40%;
+      margin: auto;
+      filter: grayscale(30%) sepia(50%) brightness(107%) saturate(84%);
+      -webkit-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      -moz-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      transform: rotate(352deg);
+      -webkit-transform: rotate(352deg);
+      -moz-transform: rotate(352deg);
+   }
+
+   #camara-info-2{
+      width: 18%;
+      position: absolute;
+      left: 64%;
+      top: 72%;
+      margin: auto;
+      filter: grayscale(30%) sepia(50%) brightness(107%) saturate(84%);
+      -webkit-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      -moz-filter: grayscale(67%) sepia(50%) brightness(107%) saturate(84%);
+      transform: rotate(13deg);
+      -webkit-transform: rotate(13deg);
+      -moz-transform: rotate(13deg);
+   } 
+}  
+
 }
