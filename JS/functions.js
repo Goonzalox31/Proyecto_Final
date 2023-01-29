@@ -1,30 +1,52 @@
 let hidetext = document.getElementById("hidetext");
-let hidetext_btn = document.getElementById("hidetext_btn");
+let hidetext_btn = document.getElementById("hidetext_btn")
 
-hidetext_btn.addEventListener('click' , toggleText);
+hidetext_btn.addEventListener('click' , function(){
+    toggleText(hidetext, hidetext_btn)
+});
 
-function toggleText(){
-    hidetext.classList.toggle('show');
+let hidetext_2 = document.getElementById("hidetext-2");
+let hidetext_btn_2 = document.getElementById("hidetext_btn-2")
 
-    if(hidetext.classList.contains('show')) {
-        hidetext_btn.innerHTML = 'Ver Menos' 
+hidetext_btn_2.addEventListener('click', function() {
+    toggleText(hidetext_2, hidetext_btn_2);
+  });
+
+
+function toggleText(var1 , var2){
+    var1.classList.toggle('show');
+
+    if(var1.classList.contains('show')) {
+        var2.innerHTML = 'Ver Menos' 
           
     }
     else {
-        hidetext_btn.innerHTML = 'Ver Mas'
+        var2.innerHTML = 'Ver Mas'
     }
 }
 
-document.body.style.backgroundImage = 'url("/Imagenes/Fondo3.jpg")'
-document.getElementById('boton-fondo').addEventListener('click',function(){
-    
 
-    if (document.body.style.backgroundImage == 'url("/Imagenes/Fondo3.jpg")') {
-        document.body.style.backgroundImage = 'url("/Imagenes/Fondo2.jpg")'
-    }
-    else {
-        document.body.style.backgroundImage = 'url("/Imagenes/Fondo3.jpg")'
-    }
- 
 
-}   )
+
+
+const changeBgButton = document.getElementById("boton-fondo");
+changeBgButton.addEventListener("click", changeBackground);
+
+const backgrounds = [
+    "url('/Imagenes/fondos/Fondo1.jpg')",
+    "url('/Imagenes/fondos/Fondo2.jpg')",
+    "url('/Imagenes/fondos/Fondo3.jpg')",
+    "url('/Imagenes/fondos/Fondo4.jpg')"
+];
+let index = 0;
+
+function changeBackground() {
+    document.body.style.backgroundImage = backgrounds[index];
+    index++;
+    if (index >= backgrounds.length) {
+        index = 0;
+    }
+}
+
+
+
